@@ -15,6 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Circle moon;
     private boolean drawn;
 
     /**
@@ -26,6 +27,7 @@ public class Picture
         window = new Square();
         roof = new Triangle();  
         sun = new Circle();
+        moon = new Circle();
         drawn = false;
     }
 
@@ -57,6 +59,15 @@ public class Picture
             sun.changeSize(80);
             sun.makeVisible();
             drawn = true;
+            
+            moon.changeColor("red");
+            moon.moveHorizontal(200);
+            moon.moveVertical(-300);
+            moon.changeSize(40);
+            moon.makeVisible();
+            drawn = true;            
+            
+            
         }
     }
 
