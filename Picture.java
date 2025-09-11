@@ -13,9 +13,13 @@ public class Picture
 {
     private Square building;
     private Square window;
+    private Square window2;
+    private Square window3;
+    private Square door;
     private Triangle roof;
     private Circle sun;
     private Circle moon;
+    private Person man;
     private boolean drawn;
 
     /**
@@ -25,10 +29,15 @@ public class Picture
     {
         building = new Square();
         window = new Square();
+        window2 = new Square();
+        window3 = new Square();
         roof = new Triangle();  
         sun = new Circle();
         moon = new Circle();
+        man = new Person();
+        door = new Square();
         drawn = false;
+        
     }
 
     /**
@@ -37,11 +46,26 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            window.changeColor("grey");
+            building.changeColor("grey");
             building.moveHorizontal(-140);
             building.moveVertical(20);
             building.changeSize(400);
             building.makeVisible();
+            
+            
+            man.changeColor("grey");
+            man.moveHorizontal(-140);
+            man.moveVertical(50);
+            man.makeVisible(); 
+            
+            door.changeColor("red");
+            door.moveHorizontal(-110);
+            door.moveVertical(110);
+            door.changeSize(100);
+            door.makeVisible();
+            
+            
+            
             
             window.changeColor("black");
             window.moveHorizontal(-120);
@@ -49,6 +73,18 @@ public class Picture
             window.changeSize(40);
             window.makeVisible();
     
+            window2.changeColor("black");
+            window2.moveHorizontal(100);
+            window2.moveVertical(40);
+            window2.changeSize(40);
+            window2.makeVisible();
+            
+            window3.changeColor("yellow");
+            window3.moveHorizontal(5);
+            window3.moveVertical(40);
+            window3.changeSize(40);
+            window3.makeVisible();
+            
             roof.changeSize(60, 180);
             roof.moveHorizontal(20);
             roof.moveVertical(-60);
