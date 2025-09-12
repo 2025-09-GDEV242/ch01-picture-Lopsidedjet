@@ -16,7 +16,7 @@ public class Picture
     private Square window2;
     private Square window3;
     private Square door;
-    private Triangle roof;
+    private Triangle hat;
     private Circle sun;
     private Circle moon;
     private Person man;
@@ -31,7 +31,7 @@ public class Picture
         window = new Square();
         window2 = new Square();
         window3 = new Square();
-        roof = new Triangle();  
+        hat = new Triangle();  
         sun = new Circle();
         moon = new Circle();
         man = new Person();
@@ -73,7 +73,7 @@ public class Picture
             window.changeSize(40);
             window.makeVisible();
     
-            window2.changeColor("black");
+            window2.changeColor("blue");
             window2.moveHorizontal(100);
             window2.moveVertical(40);
             window2.changeSize(40);
@@ -85,10 +85,11 @@ public class Picture
             window3.changeSize(40);
             window3.makeVisible();
             
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
+            hat.changeColor("green");
+            hat.changeSize(60,20);
+            hat.moveHorizontal(-70);
+            hat.moveVertical(35);
+            hat.makeVisible();
     
             sun.changeColor("yellow");
             sun.moveHorizontal(100);
@@ -97,7 +98,7 @@ public class Picture
             sun.makeVisible();
             drawn = true;
             
-            moon.changeColor("blue");
+            moon.changeColor("grey");
             moon.moveHorizontal(100);
             moon.moveVertical(-100);
             moon.changeSize(100);
@@ -115,7 +116,7 @@ public class Picture
     {
         building.changeColor("black");
         window.changeColor("white");
-        roof.changeColor("black");
+        hat.changeColor("black");
         sun.changeColor("black");
     }
 
@@ -126,7 +127,7 @@ public class Picture
     {
         building.changeColor("grey");
         window.changeColor("black");
-        roof.changeColor("green");
+        hat.changeColor("green");
         sun.changeColor("yellow");
     }
 }
