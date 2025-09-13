@@ -1,12 +1,8 @@
 /**
- * This class represents a simple picture. You can draw the picture using
- * the draw method. But wait, there's more: being an electronic picture, it
- * can be changed. You can set it to black-and-white display and back to
- * colors (only after it's been drawn, of course).
- *
- * This class was written as an early example for teaching Java with BlueJ.
+ * This class represents a simple picture. It a wizard in a green hat, heading
+ * to his home. A magical event where the moon covers the sun.
  * 
- * @author  Michael Kšlling and David J. Barnes
+ * @author  Joseph Patti
  * @version 2016.02.29
  */
 public class Picture
@@ -114,10 +110,17 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        building.changeColor("black");
+        building.changeColor("grey");
         window.changeColor("white");
         hat.changeColor("black");
         sun.changeColor("black");
+        moon.changeColor("white");
+        hat.changeColor("black");
+        window.changeColor("black");
+        window2.changeColor("white");
+        window3.changeColor("white");
+        door.changeColor("white");
+        man.changeColor("black");
     }
 
     /**
@@ -128,6 +131,12 @@ public class Picture
         building.changeColor("grey");
         window.changeColor("black");
         hat.changeColor("green");
+        moon.changeColor("grey");
         sun.changeColor("yellow");
+        hat.changeColor("green");
+        window2.changeColor("blue");
+        window3.changeColor("yellow");
+        door.changeColor("red");
+        man.changeColor("black");
     }
 }
