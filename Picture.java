@@ -1,6 +1,6 @@
 /**
  * This class represents a simple picture. It a wizard in a green hat, heading
- * to his home. A magical event where the moon covers the sun.
+ * to his home. A magical event where the moon covers the sun is happing .
  * 
  * @author  Joseph Patti
  * @version 2016.02.29
@@ -16,6 +16,7 @@ public class Picture
     private Circle sun;
     private Circle moon;
     private Person man;
+    
     private boolean drawn;
 
     /**
@@ -33,7 +34,7 @@ public class Picture
         man = new Person();
         door = new Square();
         drawn = false;
-        
+               
     }
 
     /**
@@ -42,6 +43,8 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
+            
+            
             building.changeColor("grey");
             building.moveHorizontal(-140);
             building.moveVertical(20);
